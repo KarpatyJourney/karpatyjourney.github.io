@@ -1,0 +1,1 @@
+import initMap from 'js/map-init.js';

@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+#mapid {
+  height: 100vh;
+}
+
+.popup-image {
+  width: 300px;
+  height: auto;
+}
