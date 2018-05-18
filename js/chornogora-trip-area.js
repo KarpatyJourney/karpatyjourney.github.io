@@ -20,7 +20,7 @@ estateKyivCamp.bindPopup(`<h1>Клубний будинок “Київська 
                           <h2>Private estate "Kyiv Camp"</h2>
                           <img class="popup-image" src="images/chornohora/kyiv-camp-estate.jpg" alt="Kyiv camp estate">
                           <p>Початок та завершення маршруту</p>
-                          <a href="https://dzembronya.blogspot.com/p/blog-page_17.html" target="blank">Подробнее</a>`);
+                          <a href="https://dzembronya.blogspot.com/p/blog-page_17.html" target="blank">Детальніше</a>`);
 
 
 // Dzembronsky waterfalls
