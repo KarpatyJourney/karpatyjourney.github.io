@@ -1,6 +1,12 @@
 const mymap = L.map('mapid').setView([48.153719, 24.822922], 11);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+//   maxZoom: 18,
+// }).addTo(mymap);
+
+// Add Open topomap layer
+L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
   maxZoom: 18,
 }).addTo(mymap);
