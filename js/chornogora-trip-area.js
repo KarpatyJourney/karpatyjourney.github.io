@@ -10,7 +10,7 @@ const chornogoraTripArea = L.polygon([
 ], {
   color: '#92AD94',
   fillColor: '#555344',
-  fillOpacity: 0.5,
+  fillOpacity: 0.1,
 }).addTo(mymap);
 
 // Private estate "Kyiv Camp"
