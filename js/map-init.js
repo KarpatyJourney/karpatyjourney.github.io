@@ -8,7 +8,7 @@ const mymap = L.map('mapid').setView([48.153719, 24.822922], 11);
 // Add Open topomap layer
 L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-  maxZoom: 18,
+  maxZoom: 17,
 }).addTo(mymap);
 
 const vizhenkaTripArea = L.polygon([
