@@ -1,4 +1,29 @@
-const mymap = L.map('mapid').setView([48.153719, 24.822922], 11);
+// Create layers for the map
+const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 18,
+});
+
+const openTopoMap = L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+  attribution: '&copy; <a href="https://opentopomap.org">OpenTopoMap (CC-BY-SA)</a>',
+  maxZoom: 17,
+});
+
+// Init map
+const mymap = L.map('mapid', {
+  center: [48.153719, 24.822922],
+  zoom: 11,
+  layers: [openStreetMap, openTopoMap],
+});
+
+const baseMaps = {
+  'Open Street Map': openStreetMap,
+  'Open Topo Map': openTopoMap,
+};
+
+// Add control switcher
+L.control.layers(baseMaps).addTo(mymap);
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -6,10 +31,11 @@ const mymap = L.map('mapid').setView([48.153719, 24.822922], 11);
 // }).addTo(mymap);
 
 // Add Open topomap layer
-L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-  maxZoom: 17,
-}).addTo(mymap);
+// L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
+//   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+//   attribution: '&copy; <a href="https://opentopomap.org">OpenTopoMap (CC-BY-SA)</a>',
+//   maxZoom: 17,
+// }).addTo(mymap);
 
 const vizhenkaTripArea = L.polygon([
   [48.240795, 25.176973],

@@ -13,7 +13,7 @@ hotelKremin.bindPopup(`<h1>Готель “Кремінь”</h1>
                        <a href="http://www.kremin-hotel.com.ua/hotel.html" target="blank">Детальніше</a>`);
 
 // Hotel "Edem" in Kreminets
-const hotelEdem = L.marker([50.1234129, 25.7166859]).addTo(mymap);
+const hotelEdem = L.marker([50.123598, 25.716961]).addTo(mymap);
 
 hotelEdem.bindPopup(`<h1>Готель “Едем”</h1>
                      <h2>Hotel "Edem"</h2>
