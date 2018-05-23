@@ -46,3 +46,14 @@ hotelSadyba.bindPopup(`<h1>Готель “Садиба”</h1>
                          <span>Tel: <a href="tel:+380972424144">+38 (097) 242-41-44</a></span>
                          <span>Tel: <a href="tel:+380962757533">+38 (096) 275-75-33</a></span>
                        </div>`);
+
+// Hotel "Old City" in Kreminets 
+const hotelOldCity = L.marker([50.093364, 25.726027]).addTo(mymap);
+
+hotelOldCity.bindPopup(`<h1>Готель “Старе місто”</h1>
+                        <h2>Hotel "Old City"</h2>
+                        <img class="popup-image" src="images/other-route-points/hotel-Stariy-gorod-Kremenec.jpg" alt="Hotel Stariy gorod">
+                        <div class="contacts-in-popup">
+                          <span>Tel: <a href="tel:+380675101504">+38 (067) 510-15-04</a></span>
+                        </div>
+                        <a href="https://hotels24.ua/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%86%D0%B0/%D0%9C%D0%B8%D0%BD%D0%B8-%D0%BE%D1%82%D0%B5%D0%BB%D1%8C-%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-6572.html" target="blank">Детальніше</a>`);
