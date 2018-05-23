@@ -52,7 +52,7 @@ const hotelOldCity = L.marker([50.093364, 25.726027]).addTo(mymap);
 
 hotelOldCity.bindPopup(`<h1>Готель “Старе місто”</h1>
                         <h2>Hotel "Old City"</h2>
-                        <img class="popup-image" src="images/other-route-points/hotel-Stariy-gorod-Kremenec.jpg" alt="Hotel Stariy gorod">
+                        <img class="popup-image" src="images/other-route-points/hotel-stare-misto-kremenec.jpeg" alt="Hotel Stariy gorod">
                         <div class="contacts-in-popup">
                           <span>Tel: <a href="tel:+380675101504">+38 (067) 510-15-04</a></span>
                         </div>
