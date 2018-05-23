@@ -35,3 +35,14 @@ hotelVika.bindPopup(`<h1>Готель “Віка”</h1>
                        <span>E-mail: <a href="mailto:otel_edem@ukr.net">otel_edem@ukr.net</a></span>
                      </div>
                      <a href="http://kremenets.net/index.html#mini-hotel" target="blank">Детальніше</a>`);
+
+// Hotel "Sadyba" in Kreminets
+const hotelSadyba = L.marker([50.109574, 25.727148]).addTo(mymap);
+
+hotelSadyba.bindPopup(`<h1>Готель “Садиба”</h1>
+                       <h2>Hotel "Sadyba"</h2>
+                       <img class="popup-image" src="images/other-route-points/hotel-sadyba.jpg" alt="Hotel Sadyba">
+                       <div class="contacts-in-popup">
+                         <span>Tel: <a href="tel:+380972424144">+38 (097) 242-41-44</a></span>
+                         <span>Tel: <a href="tel:+380962757533">+38 (096) 275-75-33</a></span>
+                       </div>`);
