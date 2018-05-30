@@ -28,6 +28,7 @@ L.control.layers(baseMaps).addTo(mymap);
 // Get current user's position
 mymap.locate({setView: true,
               maxZoom: 16,
+              watch: true,
               enableHighAccuracy: true,
              });
 
