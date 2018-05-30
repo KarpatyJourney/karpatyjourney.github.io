@@ -26,7 +26,11 @@ const baseMaps = {
 L.control.layers(baseMaps).addTo(mymap);
 
 // Get current user's position
-mymap.locate({setView: true, maxZoom: 16});
+mymap.locate({setView: true,
+              maxZoom: 16,
+            locateOptions: {
+              enableHighAccuracy: true,
+            }});
 
 function onLocationFound(e) {
   const radius = e.accuracy / 2;
