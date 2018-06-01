@@ -25,6 +25,15 @@ const baseMaps = {
 // Add control switcher
 L.control.layers(baseMaps).addTo(mymap);
 
+// Add geolocation switcher
+const geoLocation = L.control.locate({
+  flyTo: true,
+  locateOptions: {
+    enableHighAccuracy: true,
+    watch: true,
+  },
+}).addTo(mymap);
+
 // Get current user's position
 // mymap.locate({setView: true,
 //               maxZoom: 16,
