@@ -26,21 +26,21 @@ const baseMaps = {
 L.control.layers(baseMaps).addTo(mymap);
 
 // Get current user's position
-mymap.locate({setView: true,
-              maxZoom: 16,
-              watch: true,
-              enableHighAccuracy: true,
-             });
+// mymap.locate({setView: true,
+//               maxZoom: 16,
+//               watch: true,
+//               enableHighAccuracy: true,
+//              });
 
-function onLocationFound(e) {
-  const radius = e.accuracy / 2;
-  L.marker(e.latlng).addTo(mymap)
-      .bindPopup("You are within " + radius + " meters from this point").openPopup();
+// function onLocationFound(e) {
+//   const radius = e.accuracy / 2;
+//   L.marker(e.latlng).addTo(mymap)
+//       .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-  L.circle(e.latlng, radius).addTo(mymap);
-}
+//   L.circle(e.latlng, radius).addTo(mymap);
+// }
 
-mymap.on('locationfound', onLocationFound);
+// mymap.on('locationfound', onLocationFound);
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
