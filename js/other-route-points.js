@@ -57,3 +57,10 @@ hotelOldCity.bindPopup(`<h1>Готель “Старе місто”</h1>
                           <span>Tel: <a href="tel:+380675101504">+38 (067) 510-15-04</a></span>
                         </div>
                         <a href="https://hotels24.ua/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%86%D0%B0/%D0%9C%D0%B8%D0%BD%D0%B8-%D0%BE%D1%82%D0%B5%D0%BB%D1%8C-%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-6572.html" target="blank">Детальніше</a>`);
+
+// Bobsleigh track in Kreminets
+const bobsleighTrack = L.marker([50.102008, 25.701302]).addTo(mymap);
+
+bobsleighTrack.bindPopup(`<h1>Санно-бобслейна траса</h1>
+                          <h2>Bobsleigh track</h2>
+                          <img class="popup-image" src="images/other-route-points/bobsleigh-track-kreminets.jpg" alt="Bobsleigh track">`);
