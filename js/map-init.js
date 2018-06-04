@@ -32,6 +32,7 @@ const geoLocation = L.control.locate({
     enableHighAccuracy: true,
     watch: true,
   },
+  icon: 'navigation-icon',
 }).addTo(mymap);
 
 // Get current user's position

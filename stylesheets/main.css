@@ -26,3 +26,15 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
+.navigation-icon {
+  border: 1px solid black;
+}
+
+.navigation-icon::before {
+  content: 'GPS';
+  font-size: 10px;
+}
+/* .leaflet-control-locate {
+  background-color: red;
+} */
